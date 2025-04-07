@@ -1,30 +1,35 @@
 package Codelab.Modul2;
 
 class Hewan {
+    //deklarasi atribut
     String nama, jenis, suara;
 
-    void tampilkaninfo() {
+    //konstruktor untuk input atribut objek
+    Hewan(String nama, String jenis, String suara) {
+        //memastikan yang digunakan adalah variabel atribut kelas
+        this.nama = nama;
+        this.jenis = jenis;
+        this.suara = suara;
+    }
+
+    //method tampilan info hewan
+    void tampilkanInfo() {
         System.out.println("Nama: " + nama);
         System.out.println("Jenis: " + jenis);
-        System.out.println("Suara: " + suara);
+        System.out.println("Suara: " + suara + "\n");
     }
 }
 
-public class Main1 {
+public class Codelab1M2 {
     public static void main(String[] args) {
-        Hewan hewan1 = new Hewan();
-        Hewan hewan2 = new Hewan();
+        //menginput objek beserta atributnya
+        Hewan hewan1 = new Hewan("Kucing", "Mamalia", "Nyaw!");
+        Hewan hewan2 = new Hewan("Anjing", "Mamalia", "Woof!");
 
-        hewan1.nama = "Kucing";
-        hewan1.jenis = "Mamalia";
-        hewan1.suara = "Nyann~~";
-
-        hewan2.nama = "Anjing";
-        hewan2.jenis = "Mamalia";
-        hewan2.suara = "Woof-Woof!";
-
-        hewan1.tampilkaninfo();
-        hewan2.tampilkaninfo();
+        //output
+        System.out.println("Mari belajar tentang hewan!");
+        hewan1.tampilkanInfo();
+        hewan2.tampilkanInfo();
     }
 }
 

@@ -27,13 +27,11 @@ public class TugasImproved {
 
                 System.out.print("Masukkan NIM Lengkap: ");
                 String nim = input.next();
-                if (nim.length() != 15) {
-                    while (nim.length() != 15) {
-                        input.nextLine();
-                        System.out.println("NIM tidak valid! ");
-                        System.out.print("\nMasukkan NIM Lengkap: ");
-                        nim = input.next();
-                    }
+                while (nim.length() != 15) {
+                    input.nextLine();
+                    System.out.println("NIM tidak valid! ");
+                    System.out.print("\nMasukkan NIM Lengkap: ");
+                    nim = input.next();
                 }
 
                 input.nextLine();

@@ -18,7 +18,7 @@ public class Codelab1M1 { //mendeklarasi kelas utama program
         tahunLahir = input.nextInt(); //membaca input tahun lahir
 
         System.out.println("Data Diri: "); //mencetak judul
-        System.out.println("Nama\t\t\t: " + nama); //mencetak nama yang diinputkan
+        System.out.println("Nama\t\t: " + nama); //mencetak nama yang diinputkan
         if (jenisKelamin.equals("P") || jenisKelamin.equals("p")) { //pengondisian P kecil maupun besar
             System.out.println("Jenis Kelamin\t: Perempuan"); //akan mencetak Perempuan
         } else if (jenisKelamin.equals("L") || jenisKelamin.equals("l")) { //pengondisian L kecil maupun besar
@@ -28,7 +28,7 @@ public class Codelab1M1 { //mendeklarasi kelas utama program
         }
 
         int now = LocalDate.now().getYear(); //mendeklarasi variabel baru untuk menghitung umur dengan mengambil tahun
-        System.out.print("Umur\t\t\t: " + (now - tahunLahir)); //mencetak umur dari mengurangi tahun sekarang dikurang tahun lahir
+        System.out.print("Umur\t\t: " + (now - tahunLahir)); //mencetak umur dari mengurangi tahun sekarang dikurang tahun lahir
 
     }
 }
